@@ -3,7 +3,7 @@ Contributors: amg26
 Tags: disable autofill, autofill
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 A lightweight plugin that disables autofill of forms and input tags on the client-side using JavaScript.
 
