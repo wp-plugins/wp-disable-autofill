@@ -3,7 +3,7 @@
 /*
 * Plugin Name: WP Disable Autofill
 * Plugin URI: http://andrewmgunn.com
-* Description: Disables autofill for all input fields and forms.
+* Description: A lightweight plugin that disables the browser's ability to autofill forms and input tags on the client-side using JavaScript.
 * Version: 1.2
 * Author: Andrew M. Gunn
 * Author URI: http://andrewmgunn.com
