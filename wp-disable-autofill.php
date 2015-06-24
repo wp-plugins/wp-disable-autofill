@@ -1,17 +1,18 @@
 <?php
-
 /*
 * Plugin Name: WP Disable Autofill
-* Plugin URI: http://andrewmgunn.com
-* Description: A lightweight plugin that disables the browser's ability to autofill forms and input tags on the client-side using JavaScript.
-* Version: 1.2
+* Plugin URI: http://andrewmgunn.com/wp-disable-autofill/
+* Description: Disable the browser's ability to autofill forms and input fields. Ideal for forms with sensitive information and provides extra level of form submission security.
+* Version: 1.2.1
 * Author: Andrew M. Gunn
 * Author URI: http://andrewmgunn.com
+* Text Domain: wp-disable-autofill
 * License: GPL2
 */
 
 defined( 'ABSPATH' ) or die( 'Plugin file cannot be accessed directly.' );
 
+add_action( 'wp_enqueue_scripts', 'register_wpda_scripts' );
 
 function register_wpda_scripts() {
 	wp_register_script( 'wpda_script', plugins_url('inc/scripts.js', __FILE__), array('jquery'));
@@ -19,7 +20,3 @@ function register_wpda_scripts() {
 	wp_enqueue_script( 'wpda_script' );
 	wp_enqueue_style( 'wdpa_style' );
 }
-
-add_action( 'wp_enqueue_scripts', 'register_wpda_scripts' );
-//add_filter( 'the_content', 'disable_autofill')
-?>

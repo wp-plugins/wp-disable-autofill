@@ -1,17 +1,20 @@
 === WP Disable Autofill ===
-Contributors: amg26 
-Tags: disable autofill, autofill
+Donate link: http://andrewmgunn.com/donate/
+Contributors: amg26
+Tags: autofill, form autofill, input autofill, disable autofill, disable form autofill
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.2
+Stable tag: 1.2.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight plugin that disables the browser's ability to autofill forms and input tags on the client-side using JavaScript.
+Disable the browser's ability to autofill forms and input fields. Ideal for forms with sensitive information and provides extra level of form submission security.
 
 
 == Installation ==
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 
-==Readme Generator== 
+==Readme Generator==
 
 This Readme file was generated using <a href = 'http://sudarmuthu.com/wordpress/wp-readme'>wp-readme</a>, which generates readme files for WordPress Plugins.
