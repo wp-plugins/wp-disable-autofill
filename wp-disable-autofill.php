@@ -11,10 +11,11 @@
 */
 
 defined( 'ABSPATH' ) or die( 'Plugin file cannot be accessed directly.' );
+require_once('options/options.php');
 
 add_action( 'wp_enqueue_scripts', 'register_wpda_scripts' );
 
-require_once('options/options.php');
+
 
 function register_wpda_scripts() {
 	wp_register_script( 'wpda_script', plugins_url('inc/plugin-scripts.js', __FILE__), array('jquery'));
