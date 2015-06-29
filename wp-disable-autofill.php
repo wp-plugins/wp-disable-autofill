@@ -22,7 +22,7 @@ function register_wpda_scripts() {
 	wp_enqueue_script( 'wpda_script' );
 	wp_enqueue_style( 'wdpa_style' );
 }
-add_action ('after_setup_theme', 'create_plugin_settings_link');
+add_action ('after_setup_theme', 'create_wp_disable_autofill_settings_link');
 
 function register_wp_disable_autofill_settings_link( $links ) {
     $url = get_admin_url() . 'options-general.php?page=wp-disable-autofill-settings';
