@@ -22,14 +22,3 @@ function register_wpda_scripts() {
 	wp_enqueue_script( 'wpda_script' );
 	wp_enqueue_style( 'wdpa_style' );
 }
-add_action ('after_setup_theme', 'create_wp_disable_autofill_settings_link');
-
-function register_wp_disable_autofill_settings_link( $links ) {
-    $url = get_admin_url() . 'options-general.php?page=wp-disable-autofill-settings';
-    $settings_link = '<a href="' . $url . '">' . __('Settings', 'wp-disable-autofill') . '</a>';
-    array_unshift( $links, $settings_link );
-    return $links;
-}
-function create_wp_disable_autofill_settings_link() {
-     add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'register_wp_disable_autofill_settings_link');
-}
