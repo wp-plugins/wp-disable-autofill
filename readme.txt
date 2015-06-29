@@ -4,7 +4,7 @@ Contributors: amg26
 Tags: autofill, form autofill, input autofill, disable autofill, disable form autofill
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.2.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
